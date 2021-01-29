@@ -1,0 +1,36 @@
+body
+{
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section .container-lg{
+    height: calc(100vh - 56px);
+}
+
+section#home .container-lg{
+    color: #f1f1f1;
+}
+
+section#home .container-lg h1{
+    font-size: 48pt;
+    text-align: center;
+}
+
+section#home .container-lg h1::after{
+    content: "Elias Muñoz";
+    animation: textanim 15s linear infinite;
+}
+
+@keyframes textanim{
+    25%{
+        content: "an Engineer";
+    }
+    50%{
+        content: "a Reseacher";
+    }
+    75%{
+        content: "a Developer";
+    }
+}
